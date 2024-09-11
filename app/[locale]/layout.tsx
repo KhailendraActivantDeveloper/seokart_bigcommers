@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-// import {NextIntlClientProvider} from 'next-intl';
+import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages} from 'next-intl/server';
 
 const inter = Inter({
@@ -23,9 +23,9 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <NextIntlClientProvider messages={messages}> */}
+        <NextIntlClientProvider messages={messages}>
           {children}
-        {/* </NextIntlClientProvider> */}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
