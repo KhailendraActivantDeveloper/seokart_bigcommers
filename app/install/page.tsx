@@ -1,14 +1,14 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Dashboard from '../(bigcommerce)/dashboard/page'
+import Dashboard from '../[locale]/(bigcommerce)/dashboard/page'
 import { useSearchParams } from 'next/navigation'
-import Loading from '../_components/loading'
+import Loading from '../[locale]/_components/loading'
 
 import { InstallApi } from '@/app/_api/apiCall'
-import Error from '@/app/error'
+import Error from '@/app/[locale]/error'
 
-import Layout from '../(bigcommerce)/layout'
+import Layout from '../[locale]/(bigcommerce)/layout'
 
 export default function Home() {
   const searchParams = useSearchParams()
