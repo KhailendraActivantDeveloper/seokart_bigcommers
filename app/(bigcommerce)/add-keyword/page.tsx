@@ -14,7 +14,7 @@ import Confirmation from "@/app/_components/confirmation"
 import SuggestModal from './_components/suggestKeywordModal'
 // import { basePath } from '@/next.config'
 import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 

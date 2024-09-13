@@ -1,5 +1,5 @@
 import { Api } from "@/app/_api/apiCall"
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 import dynamic from "next/dynamic"
 import { useEffect, useState } from "react"
 import { Spinner } from "react-bootstrap"

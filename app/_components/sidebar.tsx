@@ -4,7 +4,7 @@ import { useSelectedLayoutSegment } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Dropdown } from 'react-bootstrap'
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??""
 

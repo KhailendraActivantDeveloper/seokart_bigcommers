@@ -6,7 +6,7 @@ import { Api } from '@/app/_api/apiCall'
 import { toast } from 'react-toastify'
 import CustomItemModal from './customItemList'
 import ConfirmModal from './confirmModal'
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 type TranslateFunction = (key: string, options?: { [key: string]: string | number }) => string;

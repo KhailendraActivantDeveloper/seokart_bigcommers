@@ -9,7 +9,7 @@ import Image from "next/image";
 import { Pagination } from 'rsuite';
 import { Tabs, Tab,Dropdown } from 'react-bootstrap'
 import Singleitem from './singleItem'
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 
 export default function Home() {

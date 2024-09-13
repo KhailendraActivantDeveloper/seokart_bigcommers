@@ -13,7 +13,7 @@ import { useSearchParams } from 'next/navigation'
 import PaymentModal from '@/app/_components/infoModal'
 import ConfirmationModal from '@/app/_components/confirmation'
 import Hamburger from '../../_components/hamburger'
-import {useTranslations} from 'next-intl';
+import { useTranslations } from '@/translator'
 
 import Languagedropdown from '@/app/_components/languageDropdown'
 
@@ -248,8 +248,8 @@ export default function Home(Props: any) {
         <div className="top-bar">
             {
               translate1.rich('seoServices', {
-                consultation: (chunks) => <a href="https://calendly.com/seokart/30min?month=2024-08" target="_blank"> {chunks} </a>,
-                demoUrl: (chunk) => <a href="https://calendly.com/seokart/30min?month=2024-08" target="_blank"> {chunk} </a>
+                consultation: (chunks: string) => <a href="https://calendly.com/seokart/30min?month=2024-08" target="_blank"> {chunks} </a>,
+                demoUrl: (chunk: string) => <a href="https://calendly.com/seokart/30min?month=2024-08" target="_blank"> {chunk} </a>
               })
             }
           <div>

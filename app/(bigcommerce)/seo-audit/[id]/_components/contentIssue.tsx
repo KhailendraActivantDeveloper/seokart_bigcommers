@@ -8,7 +8,7 @@ import { Spinner } from "react-bootstrap"
 import LinkModal from './linkModal'
 import SpellModal from './spellModal'
 import { useParams } from "next/navigation"
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''

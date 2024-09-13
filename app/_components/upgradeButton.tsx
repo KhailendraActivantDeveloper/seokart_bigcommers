@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 import Link from "next/link"
 import { useEffect, useState } from "react"
 

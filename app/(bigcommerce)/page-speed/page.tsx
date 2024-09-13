@@ -9,7 +9,7 @@ import Childtabcontent from './_components/childTabContent'
 import Chart from './_components/chart'
 import Link from 'next/link'
 import Hamburger from '../../_components/hamburger'
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 
 export default function Home() {
   const [homeUrl, setHomeUrl] = useState()

@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 import dynamic from 'next/dynamic'
 import { useSearchParams } from 'next/navigation'
 import { Tabs, Tab, Nav } from 'react-bootstrap'

@@ -23,7 +23,7 @@ const ConversionGraph = dynamic(()=>import('./_components/conversionGraph'),{ssr
 //import HistoryGraph from './_components/historyGraph'
 const HistoryGraph = dynamic(()=>import('./_components/historyGraph'),{ssr:false,loading:()=><>Loading...</>})
 import AccountListModal from './_components/accountListModal'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 

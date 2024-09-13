@@ -16,7 +16,7 @@ import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
 import ConfirmModal from '@/app/_components/confirmation'
 import Hamburger from '../../_components/hamburger'
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 

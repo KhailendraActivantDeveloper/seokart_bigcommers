@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { memo, useState, useCallback, useEffect, useMemo } from 'react';
 import { Api } from "@/app/_api/apiCall";
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 const Chart = dynamic(() => import("react-google-charts"), { ssr: false })
 
 export default function Home() {

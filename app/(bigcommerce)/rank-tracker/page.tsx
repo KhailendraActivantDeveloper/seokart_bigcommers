@@ -14,7 +14,7 @@ import { toast } from 'react-toastify'
 import Confirmation from "@/app/_components/confirmation"
 import Centerspinner from '@/app/_components/loading'
 import Hamburger from '../../_components/hamburger'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 import Languagedropdown from '@/app/_components/languageDropdown'
 
 

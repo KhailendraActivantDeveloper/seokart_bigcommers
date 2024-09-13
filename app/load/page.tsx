@@ -25,7 +25,7 @@ export default function Home() {
     Api('appLoad', { signedPayload, signedPayloadJwt }).then((data: any) => {
       (data.status_code == 200) ? setValidUser(true) : setValidUser(false)
       const result = data.data
-      localStorage.setItem('api-token', result?.api_token ?? signedPayloadJwt)
+      localStorage.setItem('api-token', result.api_token)
       localStorage.setItem('shop', result.shop)
       localStorage.setItem('manage_service', result.manage_services)
       localStorage.setItem('user_id', result.user_id)

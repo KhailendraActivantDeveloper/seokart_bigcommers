@@ -5,7 +5,7 @@ import { memo, useCallback, useEffect, useState } from 'react'
 import { Api } from '@/app/_api/apiCall'
 import { Modal } from 'react-bootstrap'
 import Select from "react-select"
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 
 function Home(Props: any) {
   const [account, setAccount] = useState('')

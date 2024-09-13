@@ -17,7 +17,7 @@ import Select from "react-select"
 import _ from 'lodash'
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 const KeywordRankModal = dynamic(() => import('./_components/keywordRankModal'), { ssr: false })
 const CustomEditor = dynamic(() => {
   return import('../../../_ckeditor/custom-editor');

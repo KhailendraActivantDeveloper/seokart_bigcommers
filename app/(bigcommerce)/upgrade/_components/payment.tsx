@@ -3,7 +3,7 @@ import { memo, useCallback, useEffect, useState, } from "react"
 import { Api } from "@/app/_api/apiCall";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 
 
 function Home({ Props }: { Props: any }) {

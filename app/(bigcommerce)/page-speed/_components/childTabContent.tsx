@@ -1,7 +1,7 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css';
 import Image from 'next/image'
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 
 export default function Home({ data }: { data: any }) {
   const translate = useTranslations('common');

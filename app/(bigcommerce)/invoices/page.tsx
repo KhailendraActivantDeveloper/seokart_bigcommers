@@ -3,7 +3,7 @@
 import { Api } from "@/app/_api/apiCall"
 import { useEffect, useState } from "react"
 import { format } from "date-fns"
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 export default function Home() {
   const [invoice, setInvoice] = useState<Object[]>([])

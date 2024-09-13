@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 import dynamic from "next/dynamic"
 const Channel = dynamic(() => import('@/app/_components/channelList'), { ssr: false })
 const Howitwork = dynamic(() => import('@/app/_howitwork/modal'), { ssr: false })

@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 import { useState } from "react"
 import { Modal} from "react-bootstrap"
 

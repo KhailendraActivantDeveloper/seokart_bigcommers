@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 import { Modal, Button, ListGroup, Badge } from 'react-bootstrap'
 
 export default function Home(Props: any) {

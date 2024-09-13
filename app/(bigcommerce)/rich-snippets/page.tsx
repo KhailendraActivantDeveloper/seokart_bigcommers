@@ -17,7 +17,7 @@ import Howitwork from '@/app/_howitwork/modal'
 import { Api } from "@/app/_api/apiCall"
 import Image from "next/image"
 import Hamburger from '../../_components/hamburger'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 

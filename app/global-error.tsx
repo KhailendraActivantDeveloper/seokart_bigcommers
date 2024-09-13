@@ -1,6 +1,6 @@
 'use client'
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 
 export default function GlobalError({

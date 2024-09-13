@@ -4,7 +4,7 @@ import { PayPalScriptProvider, PayPalButtons, usePayPalScriptReducer } from "@pa
 import dynamic from "next/dynamic";
 import Payment from './payment'
 import { useEffect } from 'react'
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''

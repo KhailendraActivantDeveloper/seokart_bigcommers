@@ -1,6 +1,6 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import Image from "next/image"
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 //import { basePath } from "../../next.config.js"
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''

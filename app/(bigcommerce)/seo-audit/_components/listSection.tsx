@@ -3,7 +3,7 @@ import { Tab, Nav } from "react-bootstrap"
 import PageList from './pageList'
 import ErrorList from './errorList'
 import { useSearchParams } from "next/navigation"
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 
 export default function Home() {
 	const translate = useTranslations('common');

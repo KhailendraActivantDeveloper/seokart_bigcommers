@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Api } from "@/app/_api/apiCall"
 import { toast } from "react-toastify"
 import { Spinner, OverlayTrigger, Tooltip } from "react-bootstrap"
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 
 export default function Home({ item }: { item: any }) {

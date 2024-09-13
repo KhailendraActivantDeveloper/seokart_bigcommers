@@ -6,7 +6,7 @@ import { Api } from "@/app/_api/apiCall"
 import { useRouter } from "next/navigation"
 import { toast } from "react-toastify"
 import Previewmodal from '@/app/(bigcommerce)/image-optimizer/_components/previewModal'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 
 export default function Home({ image, setPrimaryImageAltText,setUpdateImageData,componentKey }: { image: any, setPrimaryImageAltText: any,setUpdateImageData:any,componentKey:any }) {

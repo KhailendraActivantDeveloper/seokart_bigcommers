@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import SingleItem from './singleItem'
 import { Pagination } from 'rsuite';
 import { Spinner } from 'react-bootstrap'
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 
 export default function Home() {
 	const translate = useTranslations('common');

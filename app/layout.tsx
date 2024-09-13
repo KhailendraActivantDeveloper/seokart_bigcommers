@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import {NextIntlClientProvider} from 'next-intl';
-import {getLocale, getMessages} from 'next-intl/server';
+import { LocaleProvider } from "@/context/LocaleContext";
 
 const inter = Inter({
   subsets: [],
@@ -17,15 +16,13 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const locale = await getLocale();
-  const messages = await getMessages();
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextIntlClientProvider messages={messages}>
+        <LocaleProvider>
           {children}
-        </NextIntlClientProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

@@ -13,7 +13,7 @@ import Image from 'next/image'
 // import { basePath } from '@/next.config'
 import Tabcontent from './_components/tabContent'
 import Hamburger from '../../_components/hamburger'
-import { useTranslations } from 'next-intl'
+import { useTranslations } from '@/translator'
 
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''

@@ -2,7 +2,7 @@ import { Chart } from "react-google-charts"
 import { useRef, useEffect, useCallback } from 'react'
 import { Modal } from "react-bootstrap"
 import { format } from 'date-fns'
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 
 export default function Home({ item, show, onHide }: { item: any, show: any, onHide: any }) {
   const translate = useTranslations('rank-tracker');

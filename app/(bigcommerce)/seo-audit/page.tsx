@@ -14,7 +14,7 @@ import Confirmation from "@/app/_components/confirmation"
 import UpgradeButton from "../../_components/upgradeButton"
 import Hamburger from '../../_components/hamburger'
 import Languagedropdown from '@/app/_components/languageDropdown'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 
 

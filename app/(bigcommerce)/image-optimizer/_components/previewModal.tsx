@@ -1,5 +1,5 @@
 import { Api } from "@/app/_api/apiCall"
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 import { useEffect, useState } from "react"
 import { Modal, Spinner } from "react-bootstrap"
 

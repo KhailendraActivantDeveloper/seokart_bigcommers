@@ -7,7 +7,7 @@ import { Api } from "@/app/_api/apiCall"
 import { toast } from "react-toastify"
 import { useRouter } from "next/navigation"
 import Previewmodal from './previewModal'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 

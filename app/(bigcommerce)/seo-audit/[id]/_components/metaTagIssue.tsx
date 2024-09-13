@@ -6,7 +6,7 @@ import { Api } from "@/app/_api/apiCall"
 import { useEffect, useState } from "react"
 import { Spinner } from "react-bootstrap"
 import DuplicateModal from './duplicateModal'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 
 export default function Home(Props: any) {

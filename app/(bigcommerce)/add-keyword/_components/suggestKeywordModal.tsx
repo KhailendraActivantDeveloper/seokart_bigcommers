@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Modal, Spinner } from "react-bootstrap"
 import { Api } from "@/app/_api/apiCall"
 import Image from "next/image"
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 // import { basePath } from "@/next.config"
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 

@@ -3,7 +3,7 @@ import Select from "react-select"
 import { useState, useEffect } from "react"
 import { Api } from "@/app/_api/apiCall"
 import { toast } from 'react-toastify'
-import { useTranslations } from "next-intl"
+import { useTranslations } from '@/translator'
 
 export default function Home(Props: any) {
 	const translate = useTranslations('common');

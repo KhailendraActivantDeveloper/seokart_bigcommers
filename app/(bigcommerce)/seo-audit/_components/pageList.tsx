@@ -5,7 +5,7 @@ import { Spinner } from "react-bootstrap"
 import { Pagination } from 'rsuite';
 import Image from "next/image"
 import SingleItem from './singleItem'
-import { useTranslations } from "next-intl";
+import { useTranslations } from '@/translator'
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 
 export default function Home() {

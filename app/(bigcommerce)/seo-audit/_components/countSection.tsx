@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { Progress } from 'rsuite';
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/translator'
 
 const basePath = process.env.NEXT_PUBLIC_BASEPATH??''
 
