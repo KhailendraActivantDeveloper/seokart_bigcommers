@@ -16,19 +16,25 @@ export const useTranslations = (key: string) => {
         console.error(`Error loading translation file for language: ${locale}`, error);
       }
     };
-    
+
     loadTranslation();
   }, [locale, key]);
 
+  // Function to replace placeholders with values
+  const replacePlaceholders = (translation: string, variables: Record<string, any>) => {
+    return translation.replace(/{(.*?)}/g, (_, variableKey) => variables[variableKey] || `{${variableKey}}`);
+  };
+
   // Function to get the translation for a specific key
-  const getTranslation = useCallback((innerKey: string) => {
-    return translationData[innerKey] || `${key}.${innerKey}`; 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const getTranslation = useCallback((innerKey: string, variables: Record<string, any> = {}) => {
+    const translation = translationData[innerKey] || `${key}.${innerKey}`;
+    return Object.keys(variables).length ? replacePlaceholders(translation, variables) : translation;;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [translationData]);
 
   // Rich text translation function
-  const rich = (key: string, components: Record<string, (chunk: string) => JSX.Element>) => {
-    const translation = getTranslation(key);
+  const rich = (key: string, components: Record<string, (chunk: string) => JSX.Element>, variables: Record<string, any> = {}) => {
+    const translation = getTranslation(key, variables);
 
     // Split the translation based on tags and replace them with components
     return translation.split(/(<.*?>)/g).map((part, index) => {
@@ -46,7 +52,7 @@ export const useTranslations = (key: string) => {
   };
 
   // Attach the `rich` method to the `getTranslation` function
-  const translet: any = (innerKey: string) => getTranslation(innerKey);
+  const translet: any = (innerKey: string, variables: Record<string, any> = {}) => getTranslation(innerKey, variables);
   translet.rich = rich;
 
   return translet;
